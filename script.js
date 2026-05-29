@@ -63,6 +63,7 @@ class Field {
 		this.clearIntervals();
 		document.removeEventListener('click', this.bird.jump);
 		console.log("GAME OVER!");
+		document.addEventListener('click', ()=>window.location.reload());
 	}
 
 	clearIntervals() {
